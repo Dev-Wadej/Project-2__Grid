@@ -23,7 +23,10 @@ body {
   grid-auto-rows: 30rem;
   border-radius: 0.6rem;
   overflow: hidden; }
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 65em) {
+    .container {
+      margin: 7rem 3rem; } }
+  @media only screen and (max-width: 50em) {
     .container {
       grid-template-rows: minmax(1rem, min-content) max-content;
       grid-template-columns: minmax(min-content, 1fr);
@@ -32,7 +35,7 @@ body {
 .left__side {
   background-color: #1a1736;
   padding: 3.5rem; }
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     .left__side {
       text-align: center; } }
   .left__side--heading {
@@ -48,17 +51,19 @@ body {
     font-weight: 400;
     font-size: 0.7rem;
     padding-bottom: 4rem; }
-    @media only screen and (max-width: 50rem) {
+    @media only screen and (max-width: 65em) {
       .left__side--paragraph {
-        width: 100%;
-        padding-bottom: 3rem; } }
+        padding-bottom: 2rem; } }
+    @media only screen and (max-width: 50em) {
+      .left__side--paragraph {
+        width: 100%; } }
 
 .footer {
   padding-right: 8.5rem;
   display: flex;
   text-align: center;
   justify-content: space-between; }
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     .footer {
       padding: 0 3rem;
       display: block; } }
@@ -66,7 +71,10 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 1.4rem; }
-    @media only screen and (max-width: 50rem) {
+    @media only screen and (max-width: 65em) {
+      .footer__flex {
+        padding-right: 2rem; } }
+    @media only screen and (max-width: 50em) {
       .footer__flex {
         padding-bottom: 1.2rem; } }
     .footer__flex--span {
@@ -80,9 +88,11 @@ body {
   max-width: 100%;
   max-height: 100%;
   background-image: linear-gradient(rgba(161, 85, 208, 0.6), rgba(161, 85, 208, 0.6)), url(../images/bg-img.jpg);
-  background-size: cover; }
-  @media only screen and (max-width: 50rem) {
+  background-size: cover;
+  background-position: top; }
+  @media only screen and (max-width: 50em) {
     .right__side {
+      background-size: cover;
       grid-row-start: 1;
       grid-row-end: 2;
       height: 15rem; } }
