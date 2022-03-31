@@ -1,0 +1,19 @@
+*,
+*:link,
+*:active {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%; // converting 1rem to 10px
+    background-color: $color-background;
+
+    color: $color-white;
+    font-family: "Montserrat", "sans-serif";
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}

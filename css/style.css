@@ -1,0 +1,88 @@
+*,
+*:link,
+*:active {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  background-color: #131126;
+  color: #fff;
+  font-family: "Montserrat", "sans-serif"; }
+  @media only screen and (max-width: 75em) {
+    body {
+      font-size: 50%; } }
+
+.container {
+  margin: 7rem auto;
+  max-width: 70rem;
+  display: grid;
+  grid-template-rows: minmax(3rem, min-content);
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-auto-rows: 30rem;
+  border-radius: 0.6rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 50rem) {
+    .container {
+      grid-template-rows: minmax(1rem, min-content) max-content;
+      grid-template-columns: minmax(min-content, 1fr);
+      margin: 1rem; } }
+
+.left__side {
+  background-color: #1a1736;
+  padding: 3.5rem; }
+  @media only screen and (max-width: 50rem) {
+    .left__side {
+      text-align: center; } }
+  .left__side--heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-bottom: 1.9rem; }
+    .left__side--heading-style {
+      color: #9765c3; }
+  .left__side--paragraph {
+    width: 80%;
+    color: #cacaca;
+    line-height: 1.1rem;
+    font-weight: 400;
+    font-size: 0.7rem;
+    padding-bottom: 4rem; }
+    @media only screen and (max-width: 50rem) {
+      .left__side--paragraph {
+        width: 100%;
+        padding-bottom: 3rem; } }
+
+.footer {
+  padding-right: 8.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between; }
+  @media only screen and (max-width: 50rem) {
+    .footer {
+      padding: 0 3rem;
+      display: block; } }
+  .footer__flex {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem; }
+    @media only screen and (max-width: 50rem) {
+      .footer__flex {
+        padding-bottom: 1.2rem; } }
+    .footer__flex--span {
+      color: #cacaca;
+      display: block;
+      font-size: 0.5rem;
+      font-weight: 300; }
+
+.right__side {
+  padding: 4rem;
+  max-width: 100%;
+  max-height: 100%;
+  background-image: linear-gradient(rgba(161, 85, 208, 0.6), rgba(161, 85, 208, 0.6)), url(../images/bg-img.jpg);
+  background-size: cover; }
+  @media only screen and (max-width: 50rem) {
+    .right__side {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      height: 15rem; } }
