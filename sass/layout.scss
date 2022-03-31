@@ -8,14 +8,15 @@
     grid-auto-rows: 30rem;
     border-radius: 0.6rem;
     overflow: hidden;
-
+@media only screen and (max-width:$bp-larger){
+    margin: 7rem 3rem;
+}
     @media only screen and (max-width: $bp-large) {
         grid-template-rows: minmax(1rem, min-content) max-content;
         grid-template-columns: minmax(min-content, 1fr);
         margin: 1rem;
-        // display: none;
-
-        // grid-auto-rows: 30rem;
+        // margin-right: ;
+       
     }
 }
 
@@ -43,9 +44,12 @@
         font-weight: 400;
         font-size: 0.7rem;
         padding-bottom: 4rem;
+        @media only screen and (max-width: $bp-larger) {
+            padding-bottom: 2rem;
+        }
         @media only screen and (max-width: $bp-large) {
             width: 100%;
-            padding-bottom: 3rem;
+          
         }
     }
 }
@@ -63,6 +67,9 @@
         color: $color-white;
         font-weight: 700;
         font-size: 1.4rem;
+        @media only screen and (max-width: $bp-larger) {
+            padding-right: 2rem;
+        }
         @media only screen and (max-width: $bp-large) {
             padding-bottom: 1.2rem;
         }
@@ -82,10 +89,13 @@
     max-height: 100%;
     background-image: linear-gradient(rgba($color-overlay, 0.6), rgba($color-overlay, 0.6)), (url(../images/bg-img.jpg));
     background-size: cover;
+    background-position: top;
 
     @media only screen and (max-width: $bp-large) {
+        background-size: cover;
         grid-row-start: 1;
         grid-row-end: 2;
         height: 15rem;
+    
     }
 }
